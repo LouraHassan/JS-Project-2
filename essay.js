@@ -89,6 +89,9 @@ warningAll.classList.add('none')
             }).then(res => res.json()).then(data => {
                 console.log('essay sent!');
                 essayText.classList.remove('none')
+                title.value = '';
+                img.value = '';
+                essay.value = ''
             })
         }
     }
