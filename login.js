@@ -4,19 +4,30 @@ let email = document.getElementById("email");
 let password = document.getElementById("password");
 let loginBtn = document.getElementById('loginBtn');
 let backBtn = document.getElementById('backBtn')
+let warningEmail = document.getElementById("warning-email");
+let warningPassword = document.getElementById("warning-password");
+let warningAll = document.getElementById("warning-all");
+
 
 loginBtn.addEventListener('click', () => {
     if (email.value == '' || password.value == '') {
-        window.alert('fill all the fields')
+        email.classList.add('redBorder')
+        password.classList.add('redBorder')
+        warningAll.textContent = "You must fill all the boxes";
+        warningAll.classList.remove("none");
     } else {
         checkEmail(email.value).then(isFound => {
             if (!isFound) {
-                window.alert('there is no account with this email')
+                email.classList.add('redBorder')
+                warningEmail.textContent = 'there is no account with this email'
+                warningEmail.classList.remove('none')
             } else {
                 fetch(link).then(res => res.json()).then(users => {
                     let user = users.find(user => user.email == email.value);
                     if (password.value != user.password) {
-                        window.alert('incorrect password')
+                        password.classList.add('redBorder')
+                        warningPassword.textContent = 'Incorrect password'
+                        warningPassword.classList.remove('none')
                     }
                     else {
                         let userName = user.firstName
