@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(225, 225, 225);
+}
+@media only screen and (max-width: 599px) {
+   
+
+.nav-list-div{
+    width: 60%;
+
+}
+
+.button-div{
+width: 45%;
+
+}
+
+.home-title{
+    display: block;
+    width: 80%;
+}
+
+.cards-div{
+   
+    grid-template-columns: auto ;
+}
+.card{
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+img{
+    width: 100%;
+}
+.essay-input{
+  align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    margin: 10px 0px;
+    font-size: large;
+}
+input, textarea{
+    width: 80vw;
+}
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    .nav-list-div{
+        width: 40%;
+    
+    }
+    
+    .button-div{
+    width: 30%;
+    
+    }
+    
+    .home-title{
+        display: block;
+        width: 80%;
+    }
+    
+    .cards-div{
+       
+        grid-template-columns: auto auto;
+    }
+    .card{
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    
+    img{
+        width: 100%;
+    }
+    .essay-input{
+      align-self: center;
+      
+        justify-content: center;
+        align-items: center;
+    }
+    label{
+        margin: 10px 0px;
+        font-size: large;
+    }
+    input, textarea{
+        width: 60vw;
+    }
+    
+  
+}
+
+
+@media only screen and (min-width: 731px) {
+
+    .nav-list-div{
+        width: 30%;
+    
+    }
+    
+    .button-div{
+    width: 20%;
+    
+    }
+    
+    .home-title{
+        display: block;
+        width: 80%;
+    }
+    
+    .cards-div{
+       
+        grid-template-columns: auto  ;
+    }
+    .card{
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    img{
+        width: 40%;
+        height: 90%;
+        object-fit: cover;
+    }
+    .essay-input{
+      align-self: center;
+      
+        justify-content: center;
+        align-items: center;
+    }
+    label{
+        margin: 10px 0px;
+        font-size: large;
+    }
+    input, textarea{
+        width: 50vw;
+    }
+}
+@media only screen and (min-width: 1000px) {
+ 
+    .nav-list-div{
+        width: 25%;
+    
+    }
+    
+    .button-div{
+    width: 15%;
+    
+    }
+    
+    .home-title{
+        display: block;
+        width: 80%;
+    }
+    
+    .cards-div{
+       
+        grid-template-columns: auto auto  ;
+    }
+    .card{
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+    }
+    .essay-input{
+      align-self: center;
+      
+        justify-content: center;
+        align-items: center;
+    }
+    label{
+        margin: 10px 0px;
+        font-size: large;
+    }
+    input, textarea{
+        width: 40vw;
+    }
+  
+}
+@media only screen and (min-width: 1080px) {
+  
+
+}
+@media only screen and (min-width: 1400px) {
+    .card{
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    img{
+        width: 50%;
+    }
+}
+
+.nav-section{
+    background-color: cadetblue;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+height: 10vh;
+width: 100%;
+position: sticky;
+top: 0;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+
+}
+.nav-list li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.button-div{
+display: flex;
+justify-content: center;
+}
+.button-div button{
+    padding: 10px;
+    margin: 5px;
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: start;
+padding: 10px;
+margin: 10px;
+}
+.header-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10px;
+    height: 20vh;
+    width: 90%;
+    color: rgb(75, 75, 75);
+}
+.header-div h2{
+    font-weight: bold;
+    font-size: x-large;
+}
+#welcomeName{
+    color: rgb(225, 114, 58);
+    font-style: italic;
+}
+.info-div{
+    display: flex;
+    flex-direction: column;
+    
+}
+.info {
+    display: flex;
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.info p{
+    margin: 5px;
+}
+.none{
+    display: none;
+}
+.essay-container{
+    margin: 10px;
+
+}
+.cards-div{
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    align-content: center;
+}
+.card{
+    padding: 10px;
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    background-color: white;
+}
+.imgBox{
+    border-radius: 5px;
+    margin: 5px;
+}
+.textBox{
+    margin: 5px;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: large;
+    text-transform: capitalize;
+    color:rgb(225, 114, 58)
+}
+.essay{
+    color: rgb(75, 75, 75);
+    line-height: 1.5rem;
+}
+.essay-input{
+    display: flex;
+    flex-direction: column;
+ margin: 10px;
+}
+img{
+    border-radius: 2px;
+}
+
+label{
+    align-self: flex-start;
+    color: rgb(225, 114, 58);
+    font-weight: bold;
+    font-size: large;
+}
+input, textarea{
+    padding: 10px;
+    border: 1px solid grey;
+border-radius: 2px;
+}
+.button{
+   margin: 10px; 
+   width: 40vh;
+   font-size: large;
+   padding: 10px;
+   background-color: cadetblue;
+   border-radius: 5px;
+   border: 0;
+   color: white;
+}
+.button:hover{
+    background-color: rgb(93, 150, 152);
+    cursor: pointer;
+}
+.nav-button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.nav-button:hover{
+    background-color: rgba(100, 100, 100, 0.096);
+cursor: pointer;
+}
+.redBorder {
+    border: 2px solid rgb(165, 91, 91);
+  }
+  .warning-text {
+    font-size: small;
+    color: rgb(165, 91, 91);
+    align-self: flex-start;
+    margin: 10px;
+  }
+  .warning-text-lg {
+    font-size: large;
+    color: rgb(165, 91, 91);
+    align-self: flex-start;
+    margin: 10px;
+    font-weight: bold;
+  }
+  .done-text{
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(50, 107, 50);
+  }
+ 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <nav class="nav-section">
+      <button class="nav-button" id="backBtn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+    </nav>
+    <div class="container">
+      <div id="form-content" class="input-content">
+        <h2>Sign Up</h2>
+        <div id="input-div" class="input-div">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname">
+            <p id="warning-name" class="warning-text none"></p>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname">
+            
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <p id="warning-email" class="warning-text none"></p>
+
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <p id="warning-password" class="warning-text none"></p>
+
+            <label for="confirm">Password confirmation</label>
+            <input type="password" id="confirm">
+            <p id="warning-confirm" class="warning-text none"></p>
+            <p id="warning-all" class="warning-text none"></p>
+
+            <button id="signupBtn" class="button">Create Account</button>
+            <p>Already have an account? <a href="login.html">Login!</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

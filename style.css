@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(225, 225, 225);
+}
+@media only screen and (max-width: 599px) {
+  .input-content {
+    width: 80%;
+  }
+  label {
+    margin: 8px;
+   
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .input-content {
+    width: 70%;
+  }
+  label {
+    margin: 0px 10px;
+   
+  }
+}
+@media only screen and (min-width: 630px) {
+  .input-content {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 856px) {
+  .input-content {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .input-content {
+    width: 40%;
+  }
+  label {
+    margin: 0px 10px;
+   
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .input-content {
+    width: 30%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 10px;
+}
+.input-content {
+  border: 5px solid cadetblue;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 10px;
+  height: fit-content;
+  background-color: white;
+}
+.input-content h2 {
+  color: cadetblue;
+  font-size: xx-large;
+  margin: 10px;
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+}
+label {
+  align-self: flex-start;
+  font-size: large;
+  color: rgb(225, 114, 58);
+  font-weight: bold;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+  font-size: large;
+  border: 1px solid grey;
+  border-radius: 2px;
+
+  width: 90%;
+}
+.button {
+  margin: 10px 0px;
+  font-size: x-large;
+  padding: 10px;
+  background-color: cadetblue;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  width: 90%;
+}
+.button:hover {
+  background-color: rgb(93, 150, 152);
+  cursor: pointer;
+}
+.redBorder {
+  border: 2px solid rgb(165, 91, 91);
+}
+.warning-text {
+  font-size: small;
+  color: rgb(165, 91, 91);
+  align-self: flex-start;
+  margin: 10px;
+}
+.none {
+  display: none;
+}
+.nav-section{
+    padding: 8px 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-button{
+    padding: 10px;
+    background-color: transparent;
+    border:  2px solid rgb(225, 114, 58);
+    color: rgb(225, 114, 58);
+    border-radius: 5px;
+}
+.nav-button:hover{
+    background-color: rgba(100, 100, 100, 0.096);
+    cursor: pointer;
+}

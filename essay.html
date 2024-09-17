@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+    <link rel="stylesheet" href="homeStyle.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="nav-section">
+        <div class="nav-list-div">
+<ul class="nav-list">
+    <li id="home-link">Home</li>
+    <li id="profile-link">Profile</li>
+    <li id="essay-link">Write new essay</li>
+</ul>
+        </div>
+        <div class="button-div">
+            
+                       
+            <button id="loginPage" class="nav-button">Login</button>
+            <button id="signupPage" class="nav-button">SignUp</button>
+            <button id="logoutBtn" class="nav-button">Log out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header-div">
+
+            <h2>Welcome <span id="welcomeName"></span></h2>
+    <h1 class="home-title">Start writing you essays now!</h1>
+    <p class="warning-text-lg none" id="warning-profile"><i class="fa-solid fa-circle-exclamation"></i> You Should log in to access your profile</p>
+        </div>
+<div class="essay-input">
+    <p class="warning-text-lg none" id="warning-profile2"> <i class="fa-solid fa-circle-exclamation"></i> You should log in to add your essay</p>
+
+<p class="done-text none" id="essay-text"><i class="fa-solid fa-circle-check"></i> Essay Added!</p>
+    <label for="title">Title</label>
+    <input type="text" id="title">
+    <p id="warning-title" class="warning-text none"></p>
+
+    <label for="img">Image link</label>
+    <input type="text" id="img">
+    <p id="warning-img" class="warning-text none"></p>
+
+    <label for="essay">Essay</label>
+    <textarea name="" id="essay" rows="15"></textarea>
+    <p id="warning-essay" class="warning-text none"></p>
+    <p id="warning-all" class="warning-text none"></p>
+
+    <button id="AddEssay" class="button">Add Essay</button>
+</div>
+    </div>
+    <script src="essay.js"></script>
+</body>
+</html>
